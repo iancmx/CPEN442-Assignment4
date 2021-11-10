@@ -44,5 +44,5 @@ def mine_coin_incrementally(hash_of_preceding_coin=None, id_of_miner=None):
 
 
 hash_of_preceding_coin = "a9c1ae3f4fc29d0be9113a42090a5ef9fdef93f5ec4777a008873972e60bb532"
-id_of_miner = "74260878"
+id_of_miner = SHA256("74260878")
 mine_coin_incrementally(hash_of_preceding_coin, id_of_miner)
