@@ -9,7 +9,7 @@ def mine_coin_randomly(hash_of_preceding_coin=None, id_of_miner=None):
     random.seed()
     blobs_count = 0
     while True:
-        coin_blob = random.getrandbits()
+        coin_blob = random.randint(0, 2**256)
         hash = SHA256("CPEN 442 Coin" + "2021" + hash_of_preceding_coin + str(coin_blob) + id_of_miner)
 
         if blobs_count % 1000000 == 0:
