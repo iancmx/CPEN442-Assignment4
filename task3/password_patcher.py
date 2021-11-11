@@ -1,6 +1,11 @@
 import hashlib
 import sys
 
+"""
+Run the password patcher via the following:
+    python3 .\password_patcher.py [path_to_exe_file] [new_password]
+"""
+
 def SHA1(string=""):
     return hashlib.sha1(string.encode()).digest()
 
